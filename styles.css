@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Adjusted for even spacing including title */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the body height to viewport height */
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5%; /* Increased top margin to bring h1 lower on the page */
+    font-size: 1.5em; /* Adjust font size to fit on smaller screens */
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    aspect-ratio: 1 / 1;
+    margin: 10px auto; /* Centered and reduced margin */
+    height: 75vh; /* Set grid height relative to viewport */
+    width: 75vh; /* Set grid width relative to viewport */
+}
+
+.square {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding-left: 10px; /* Added padding to the left */
+    padding-right: 10px; /* Added padding to the right */
+    box-sizing: border-box; /* Ensures padding does not affect the overall dimensions */
+    min-height: 0; /* Ensures that the height does not collapse */
+}
+
+.square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the square without resizing it */
+}
+
+.square:hover {
+    border: 1px solid dodgerblue;
+    z-index: 2;
+}
+
+form {
+    /* margin-top: 5%; Reduced margin */
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensures form is full width */
+    /* border: 1px solid red; */
+}
+
+form input {
+    font-size: 1.5em; /* Significantly increase font size for better readability */
+    padding: 10px; /* Add substantial padding around the form */
+}
+
+form button {
+    font-size: 1.5em; /* Significantly increase font size for better readability */
+    padding: 10px; /* Add substantial padding around the form */
+    background: linear-gradient(45deg, #ff6ec4, #f75858);
+    color: white;
+    border: 1px solid black;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;    
+}
+
+.hint {
+    color: red;
+    text-align: center; /* Center the hint text */
+    padding: 5px; /* Add padding for better visibility */
+}
+
+button {
+    font-size: 1.5em; /* Significantly increase font size for better readability */
+    padding: 10px; /* Add substantial padding around the form */
+    background: linear-gradient(45deg, #ff6ec4, #f75858);
+    color: white;
+    border: 1px solid black;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;    
+}
